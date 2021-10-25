@@ -68,7 +68,8 @@ Returns: str
 '''
 def parseState(fromString):
     for line in fromString.split("\n"):
-        start=line.find("from")+len("from")
+        start=line.find("from")+ \
+            len("from")
         line=line[start:]
         end=line.find(")")
         line=line[:end]
