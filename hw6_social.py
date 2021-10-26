@@ -3,7 +3,10 @@ Social Media Analytics Project
 Name:
 Roll Number:
 """
-
+import numpy
+import matplotlib
+import pandas
+import nltk
 import hw6_social_tests as test
 
 project = "Social" # don't edit this
