@@ -1,7 +1,7 @@
 """
 Social Media Analytics Project
-Name:
-Roll Number:
+Name: Rahul Kumar
+Roll Number: 05
 """
 
 import hw6_social_tests as test
