@@ -16,6 +16,7 @@ nltk.download('vader_lexicon', quiet=True)
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
+import re
 endChars = [ " ", "\n", "#", ".", ",", "?", "!", ":", ";", ")" ]
 
 '''
@@ -78,7 +79,10 @@ Parameters: str
 Returns: list of strs
 '''
 def findHashtags(message):
-    return
+    s=re.findall("#\w+",message)
+    return s
+    
+
 
 
 '''
@@ -279,10 +283,11 @@ if __name__ == "__main__":
     test.week1Tests()
     print("\n" + "#"*15 + " WEEK 1 OUTPUT " + "#" * 15 + "\n")
     test.runWeek1()
-    test.testMakeDataFrame()'''
+    test.testMakeDataFrame()
     test.testParseName()
     test.testParsePosition()
-    test.testParseState()
+    test.testParseState()'''
+    test.testFindHashtags()
     
 
     ## Uncomment these for Week 2 ##
