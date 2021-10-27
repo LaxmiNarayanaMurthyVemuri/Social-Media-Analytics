@@ -1,5 +1,5 @@
 Semester,#1original,#2original,#3original,#1 cleaned,#2 cleaned,# 3 cleaned,#1 category,#2 category,#3 category 
-S21,chocolate,Mango,Vanilla,chocolate,mango,vanilla,chocolate,fruit,vanilla
+S21,chocolate,Mango,Vanilla,chocolate,mango,vanilla,,fruit,vanilla,chocolate
 S21,Dark chocolate,chocolate,Hazelnut,dark chocolate,chocolate,hazelnut,chocolate,chocolate,fruit
 S21,chocolate,strawberry,vanilla,chocolate,strawberry,vanilla,chocolate,fruit,vanilla
 S21,Nuts overloaded,American delight,Butterscotch,nuts overloaded,american delight,butterscotch,Mixed,other,butterscotch
