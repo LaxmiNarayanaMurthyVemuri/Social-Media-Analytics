@@ -90,7 +90,19 @@ Parameters: str
 Returns: list of strs
 '''
 def findHashtags(message):
-    return
+    hastags=[]
+    split_Hastags=message.split("#")
+    for line in split_Hastags[1:len(split_Hastags)]:
+        #print(line)
+        startString=""
+        for i in line:
+            if i not in endChars:
+                startString+=i
+            else:
+                break
+        finalString="#"+startString
+        hastags.append(finalString)
+    return hastags
 
 
 '''
@@ -304,4 +316,5 @@ if __name__ == "__main__":
     #test.testMakeDataFrame()
     #test.testParseName()
     #test.testParsePosition()
-    test.testParseState()
+    #test.testParseState()
+    test.testFindHashtags()
