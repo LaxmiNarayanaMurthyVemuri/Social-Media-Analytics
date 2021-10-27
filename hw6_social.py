@@ -81,9 +81,7 @@ Returns: list of strs
 def findHashtags(message):
     s=re.findall("#\w+",message)
     return s
-    
-
-
+   
 
 '''
 getRegionFromState(stateDf, state)
@@ -92,6 +90,9 @@ Parameters: dataframe ; str
 Returns: str
 '''
 def getRegionFromState(stateDf, state):
+    row=stateDf.loc[stateDf["state"] == state, "region"]
+    return row.values[0]
+
     return
 
 
@@ -286,8 +287,9 @@ if __name__ == "__main__":
     test.testMakeDataFrame()
     test.testParseName()
     test.testParsePosition()
-    test.testParseState()'''
-    test.testFindHashtags()
+    test.testParseState()
+    test.testFindHashtags()'''
+    test.testGetRegionFromState()
     
 
     ## Uncomment these for Week 2 ##

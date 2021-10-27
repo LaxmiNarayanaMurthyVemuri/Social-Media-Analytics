@@ -12,19 +12,18 @@ d = { "name" : [ "Ellie", "Gayatri", "Rebecca", "Rishab" ],
     }
 
 df = pd.DataFrame(d)
-print(df)
+#print(df)
 
 # You can also make a new dataframe by loading a pre-exist
 icecream_df=pd.read_csv("data\politicaldata.csv")
 '''print(icecream_df)
 print(icecream_df.head())'''
-print(df["name"])
-print(df["major"])
+#print(df["name"])
+#print(df["major"])
 
 df["ice cream"] = [ "peach", "chocolate", "caramel", "rocky road" ]
-print(df)
+#print(df)
 for index, row in df.iterrows():
-    print(index)
     print(row)
     # Then you can index into the row based on column names.
     print("Name:", row["name"])
