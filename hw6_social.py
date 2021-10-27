@@ -103,6 +103,27 @@ Parameters: dataframe ; dataframe
 Returns: None
 '''
 def addColumns(data, stateDf):
+    names=[]
+    positions=[]
+    states=[]
+    regions=[]
+    hashtags=[]
+    for index,row in data.iterrows():
+        Value=row["label"]
+        names.append(parseName(Value))
+        positions.append(parsePosition(Value))
+        state=parseState(Value)
+        region=getRegionFromState(stateDf,state)
+        value1=row["text"]
+        hashtag=findHashtags(value1)
+        states.append(state)
+        regions.append(region)
+        hashtags.append(hashtag)
+    data["name"]=names
+    data["position"]=positions
+    data["state"]=states
+    data["region"]=regions
+    data["hashtags"]=hashtags
     return
 
 
@@ -288,8 +309,9 @@ if __name__ == "__main__":
     test.testParseName()
     test.testParsePosition()
     test.testParseState()
-    test.testFindHashtags()'''
-    test.testGetRegionFromState()
+    test.testFindHashtags()
+    test.testGetRegionFromState()'''
+    test.testAddColumns()
     
 
     ## Uncomment these for Week 2 ##
