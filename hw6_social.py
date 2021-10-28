@@ -217,7 +217,14 @@ Parameters: dataframe
 Returns: dict mapping strs to ints
 '''
 def getHashtagRates(data):
-    return
+    d={}
+    for index,row in data.iterrows():
+        list1=row["hashtags"]
+        for each in list1:
+            if each not in d:
+                d[each]=0
+            d[each]=d[each]+1
+    return d
 
 
 '''
@@ -237,6 +244,7 @@ Parameters: dataframe ; str
 Returns: float
 '''
 def getHashtagSentiment(data, hashtag):
+
     return
 
 
