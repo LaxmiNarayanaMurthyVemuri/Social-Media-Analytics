@@ -79,8 +79,19 @@ Parameters: str
 Returns: list of strs
 '''
 def findHashtags(message):
-    s=re.findall("#\w+",message)
-    return s
+    hashtags=[]
+    list1=message.split("#")
+    for i in range(1,len(list1)):
+        r=""
+        for j in list1[i]:
+            if j in endChars:
+                break
+            else:
+                r=r+j
+        string="#"+r
+        hashtags.append(string)
+    return hashtags
+
    
 
 '''
@@ -188,8 +199,16 @@ Parameters: dataframe ; str
 Returns: dict mapping strs to (dicts mapping strs to ints)
 '''
 def getDataForRegion(data, colName):
-    return
-
+    d={ }
+    for i in set(data["region"]):
+        d[i]={ }
+    for index,row in data.iterrows():
+        r=row[colName]
+        k=row["region"]
+        if r not in  d[k]:
+            d[k][r]=0
+        d[k][r]+=1
+    return d 
 
 '''
 getHashtagRates(data)
@@ -327,6 +346,7 @@ if __name__ == "__main__":
     test.runWeek1()
     test.testFindSentiment()
     test.testAddSentimentColumn()'''
+    test.testFindHashtags()
     
     
     
@@ -336,6 +356,7 @@ if __name__ == "__main__":
     test.week2Tests()
     print("\n" + "#"*15 + " WEEK 2 OUTPUT " + "#" * 15 + "\n")
     test.runWeek2()
+
 
     ## Uncomment these for Week 3 ##
     """print("\n" + "#"*15 + " WEEK 3 OUTPUT " + "#" * 15 + "\n")
