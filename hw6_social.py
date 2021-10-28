@@ -130,6 +130,7 @@ def addColumns(data, stateDf):
     regions_add=[]
     hashtags_add=[]
     for index, row in data.iterrows():
+        print(index, row)
         column_values = data["label"].iloc[index]
         name=parseName(column_values)
         position=parsePosition(column_values)
@@ -161,8 +162,12 @@ Returns: str
 '''
 def findSentiment(classifier, message):
     score = classifier.polarity_scores(message)['compound']
-    return
-
+    if score < -0.1:
+        return "negtive"
+    elif score > 0.1:
+        return "positive"
+    return "neutral"
+   
 
 '''
 addSentimentColumn(data)
@@ -345,4 +350,6 @@ if __name__ == "__main__":
     #test.testParseState()
     #test.testFindHashtags()
     #test.testGetRegionFromState()
-    test.testAddColumns()
+    #test.testAddColumns()
+    #test.week1Tests()
+    test.testFindSentiment()
