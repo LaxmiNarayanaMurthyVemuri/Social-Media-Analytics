@@ -37,7 +37,18 @@ Parameters: str
 Returns: str
 '''
 def parseName(fromString):
-    return
+    lst=fromString.split()
+    str="("
+    temp=""
+    count=0
+    for i in range(1,len(lst)):
+        if count<2:
+            if lst[i][0]!=str:
+                temp+=lst[i]+" "
+                count+=1
+            else:
+                break
+    return temp.strip() 
 
 
 '''
