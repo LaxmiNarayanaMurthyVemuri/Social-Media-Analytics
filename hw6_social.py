@@ -52,13 +52,13 @@ Parameters: str
 Returns: str
 '''
 def parsePosition(fromString):
-    for line in fromString.split("\n"):
-        length=line.find("(") + \
-        len("(")
-        s1=line[length:]
-        from2=s1.find(" from")
-        s2=s1[:from2].strip()
-    return s2
+    str=""
+    for i in fromString.split():
+        bracket=(i.find("("))
+        if bracket==0:
+            str=i.replace("(","")
+    return str
+    
 
 
 '''
