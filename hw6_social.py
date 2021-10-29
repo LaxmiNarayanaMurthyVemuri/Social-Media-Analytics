@@ -239,8 +239,15 @@ mostCommonHashtags(hashtags, count)
 Parameters: dict mapping strs to ints ; int
 Returns: dict mapping strs to ints
 '''
+import operator
 def mostCommonHashtags(hashtags, count):
-    return
+    ndict={}
+    sorted_hashtags=dict(sorted(hashtags.items(),key=operator.itemgetter(1),reverse=True))
+    for i in range(count):
+        for x,y in sorted_hashtags.items():
+            if len(ndict)!=count:
+                ndict[x]=y
+    return ndict
 
 
 '''
@@ -250,6 +257,9 @@ Parameters: dataframe ; str
 Returns: float
 '''
 def getHashtagSentiment(data, hashtag):
+    dict={}
+
+
     return
 
 
