@@ -281,6 +281,11 @@ Returns: None
 '''
 def graphStateCounts(stateCounts, title):
     import matplotlib.pyplot as plt
+    states = list(stateCounts.keys())
+    value= list(stateCounts.values())
+    sideBySideBarPlots(states,states,value,title)
+
+
     return
 
 
