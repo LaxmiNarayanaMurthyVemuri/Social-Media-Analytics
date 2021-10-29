@@ -170,6 +170,12 @@ Returns: None
 '''
 def addSentimentColumn(data):
     classifier = SentimentIntensityAnalyzer()
+    sentiments=[]
+    for index, row in data.iterrows():
+        txt_value=data["text"].iloc[index]
+        result=findSentiment(classifier,txt_value)
+        sentiments.append(result)
+    data["sentiment"]=sentiments
     return
 
 
