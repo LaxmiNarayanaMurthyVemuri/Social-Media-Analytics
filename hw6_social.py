@@ -36,7 +36,13 @@ Parameters: str
 Returns: str
 '''
 def parseName(fromString):
-    return
+    for line in fromString.split("\n"):
+        length=line.find(" ")
+        s1=line[length:]
+        bracket=s1.find("(")
+        s2=s1[:bracket]
+        line=s2.strip()
+    return line
 
 
 '''
@@ -267,6 +273,8 @@ if __name__ == "__main__":
     test.week1Tests()
     print("\n" + "#"*15 + " WEEK 1 OUTPUT " + "#" * 15 + "\n")
     test.runWeek1()
+
+
 
     ## Uncomment these for Week 2 ##
     """print("\n" + "#"*15 + " WEEK 2 TESTS " +  "#" * 16 + "\n")
