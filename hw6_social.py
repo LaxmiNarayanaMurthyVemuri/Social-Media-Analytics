@@ -206,7 +206,14 @@ Parameters: dataframe ; str
 Returns: dict mapping strs to (dicts mapping strs to ints)
 '''
 def getDataForRegion(data, colName):
-    return
+    newdict={}
+    for index,row in data.iterrows():
+        if row['region'] not in newdict:
+            newdict[row['region']]={}
+        if row[colName] not in newdict[row['region']]:
+            newdict[row['region']][row[colName]]=0
+        newdict[row['region']][row[colName]]+=1
+    return newdict
 
 
 '''
