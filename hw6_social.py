@@ -223,7 +223,14 @@ Parameters: dataframe
 Returns: dict mapping strs to ints
 '''
 def getHashtagRates(data):
-    return
+    resultdict={}
+    for key in data["hashtags"]:
+        for i in key:
+            if len(i)!=0 and i not in resultdict:
+                resultdict[i]=1
+            else:
+                resultdict[i]+=1
+    return resultdict
 
 
 '''
