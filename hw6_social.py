@@ -58,7 +58,12 @@ Parameters: str
 Returns: str
 '''
 def parsePosition(fromString):
-    return
+    str=""
+    for i in fromString.split():
+        bracket=(i.find("("))
+        if bracket==0:
+            str=i.replace("(","")
+    return str
 
 
 '''
