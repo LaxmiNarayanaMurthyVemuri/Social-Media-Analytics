@@ -37,18 +37,12 @@ Parameters: str
 Returns: str
 '''
 def parseName(fromString):
-    lst=fromString.split()
-    str="("
-    temp=""
-    count=0
-    for i in range(1,len(lst)):
-        if count<2:
-            if lst[i][0]!=str:
-                temp+=lst[i]+" "
-                count+=1
-            else:
-                break
-    return temp.strip() 
+    for i in fromString.split("\n"):
+        fromto=i.find(" ")
+        str=fromString[fromto:]
+        bracket=str.find("(")
+        str=str[:bracket]
+    return str.strip()
 
 
 '''
