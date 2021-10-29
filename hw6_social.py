@@ -25,7 +25,8 @@ Parameters: str
 Returns: dataframe
 '''
 def makeDataFrame(filename):
-    return
+    data=pd.read_csv(filename)
+    return data
 
 
 '''
@@ -35,7 +36,13 @@ Parameters: str
 Returns: str
 '''
 def parseName(fromString):
-    return
+    for line in fromString.split("\n"):
+        length=line.find(" ")
+        s1=line[length:]
+        bracket=s1.find("(")
+        s2=s1[:bracket]
+        line=s2.strip()
+    return line
 
 
 '''
@@ -45,7 +52,13 @@ Parameters: str
 Returns: str
 '''
 def parsePosition(fromString):
-    return
+    str=""
+    for i in fromString.split():
+        bracket=(i.find("("))
+        if bracket==0:
+            str=i.replace("(","")
+    return str
+    
 
 
 '''
@@ -55,7 +68,13 @@ Parameters: str
 Returns: str
 '''
 def parseState(fromString):
-    return
+    str="" 
+    for i in fromString.split("\n"):
+        fromto=i.find("from")
+        str=fromString[fromto:]
+        str=str.replace(")","")
+        str=str.replace("from ","")
+    return str
 
 
 '''
@@ -65,7 +84,19 @@ Parameters: str
 Returns: list of strs
 '''
 def findHashtags(message):
-    return
+    lst=[]
+    k=""
+    words=message.split("#")
+    for i in words[1:len(words)]:
+        for j in i:
+            if j not in endChars:
+                k+=j
+            else:
+                break
+        k='#'+k
+        lst.append(k)
+        k=""
+    return lst
 
 
 '''
@@ -75,7 +106,8 @@ Parameters: dataframe ; str
 Returns: str
 '''
 def getRegionFromState(stateDf, state):
-    return
+    df=stateDf.loc[stateDf["state"]==state,"region"]
+    return df.values[0]
 
 
 '''
@@ -85,6 +117,29 @@ Parameters: dataframe ; dataframe
 Returns: None
 '''
 def addColumns(data, stateDf):
+    name_add=[]
+    position_add=[]
+    state_add=[]
+    region_add=[]
+    hashtag_add=[]
+    for index, row in data.iterrows():
+        value=data['label'].iloc[index]
+        name=parseName(value)
+        position=parsePosition(value)
+        state=parseState(value)
+        region=getRegionFromState(stateDf, state)
+        text_value=data['text'].iloc[index]
+        hashtag=findHashtags(text_value)
+        name_add.append(name)
+        position_add.append(position)
+        state_add.append(state)
+        region_add.append(region)
+        hashtag_add.append(hashtag)
+    data['name']=name_add
+    data['position']=position_add
+    data['state']=state_add
+    data['region']=region_add
+    data['hashtags']=hashtag_add
     return
 
 
@@ -98,7 +153,11 @@ Returns: str
 '''
 def findSentiment(classifier, message):
     score = classifier.polarity_scores(message)['compound']
-    return
+    if score < -0.1:
+        return "negative"
+    elif score > 0.1:
+        return "positive"
+    return "neutral"
 
 
 '''
@@ -109,7 +168,13 @@ Returns: None
 '''
 def addSentimentColumn(data):
     classifier = SentimentIntensityAnalyzer()
-    return
+    sentiments=[]
+    for index,row in data.iterrows():
+        message=data['text'].iloc[index]
+        sol=findSentiment(classifier, message)
+        sentiments.append(sol)
+    data['sentiment']=sentiments
+    return None
 
 
 '''
@@ -119,7 +184,19 @@ Parameters: dataframe ; str ; str
 Returns: dict mapping strs to ints
 '''
 def getDataCountByState(data, colName, dataToCount):
-    return
+    newdict={}
+    if colName!="" and dataToCount!="":
+        for index,row in data.iterrows():
+            if row[colName]==dataToCount:
+                if row['state'] not in newdict:
+                    newdict[row['state']]=0
+                newdict[row['state']]+=1
+    else:
+        for index,row in data.iterrows():
+            if row['state'] not in newdict:
+                newdict[row['state']]=0
+            newdict[row['state']]+=1
+    return newdict
 
 
 '''
@@ -129,7 +206,14 @@ Parameters: dataframe ; str
 Returns: dict mapping strs to (dicts mapping strs to ints)
 '''
 def getDataForRegion(data, colName):
-    return
+    newdict={}
+    for index,row in data.iterrows():
+        if row['region'] not in newdict:
+            newdict[row['region']]={}
+        if row[colName] not in newdict[row['region']]:
+            newdict[row['region']][row[colName]]=0
+        newdict[row['region']][row[colName]]+=1
+    return newdict
 
 
 '''
@@ -139,7 +223,14 @@ Parameters: dataframe
 Returns: dict mapping strs to ints
 '''
 def getHashtagRates(data):
-    return
+    resultdict={}
+    for key in data["hashtags"]:
+        for i in key:
+            if len(i)!=0 and i not in resultdict:
+                resultdict[i]=1
+            else:
+                resultdict[i]+=1
+    return resultdict
 
 
 '''
@@ -148,8 +239,15 @@ mostCommonHashtags(hashtags, count)
 Parameters: dict mapping strs to ints ; int
 Returns: dict mapping strs to ints
 '''
+import operator
 def mostCommonHashtags(hashtags, count):
-    return
+    ndict={}
+    sorted_hashtags=dict(sorted(hashtags.items(),key=operator.itemgetter(1),reverse=True))
+    for i in range(count):
+        for x,y in sorted_hashtags.items():
+            if len(ndict)!=count:
+                ndict[x]=y
+    return ndict
 
 
 '''
@@ -159,7 +257,18 @@ Parameters: dataframe ; str
 Returns: float
 '''
 def getHashtagSentiment(data, hashtag):
-    return
+    count=0
+    lst=[]
+    for index,row in data.iterrows():
+        if hashtag in row['text']:
+            count+=1
+            if row['sentiment']=='positive':
+                lst.append(1)
+            elif row['sentiment']=='negative':
+                lst.append(-1)
+            elif row['sentiment']=='neutral':
+                lst.append(0)
+    return sum(lst)/count
 
 
 ### PART 3 ###
@@ -267,11 +376,13 @@ if __name__ == "__main__":
     print("\n" + "#"*15 + " WEEK 1 OUTPUT " + "#" * 15 + "\n")
     test.runWeek1()
 
+
+
     ## Uncomment these for Week 2 ##
-    """print("\n" + "#"*15 + " WEEK 2 TESTS " +  "#" * 16 + "\n")
+    print("\n" + "#"*15 + " WEEK 2 TESTS " +  "#" * 16 + "\n")
     test.week2Tests()
     print("\n" + "#"*15 + " WEEK 2 OUTPUT " + "#" * 15 + "\n")
-    test.runWeek2()"""
+    test.runWeek2()
 
     ## Uncomment these for Week 3 ##
     """print("\n" + "#"*15 + " WEEK 3 OUTPUT " + "#" * 15 + "\n")
