@@ -75,9 +75,6 @@ def parseState(fromString):
         str=str.replace(")","")
         str=str.replace("from ","")
     return str
-    
-
-    return
 
 
 '''
@@ -109,7 +106,8 @@ Parameters: dataframe ; str
 Returns: str
 '''
 def getRegionFromState(stateDf, state):
-    return
+    df=stateDf.loc[stateDf["state"]==state,"region"]
+    return df.values[0]
 
 
 '''
