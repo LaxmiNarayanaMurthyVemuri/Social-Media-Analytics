@@ -252,8 +252,23 @@ Parameters: dataframe ; str
 Returns: float
 '''
 def getHashtagSentiment(data, hashtag):
-
-    return
+    score=0
+    count=0
+    for index,row in data.iterrows():
+        hash=findHashtags(row["text"])
+        if hashtag in hash:
+            count=count+1
+            if(row["sentiment"]=='positive'):
+                score=score+1
+            elif(row["sentiment"]=='negative'):
+                score=score-1
+            else:
+                continue
+    if(count==0):
+        avg=0
+    else:
+        avg=score/count
+    return avg
 
 
 ### PART 3 ###
