@@ -234,7 +234,15 @@ Parameters: dict mapping strs to ints ; int
 Returns: dict mapping strs to ints
 '''
 def mostCommonHashtags(hashtags, count):
-    return
+    d={}
+    while(len(d)!=count):
+        largevalue=0
+        for each in hashtags:
+            if each not in d  and hashtags[each]>largevalue:
+                largevalue=hashtags[each]
+                key=each
+        d[key]=largevalue
+    return d
 
 
 '''
@@ -354,7 +362,6 @@ if __name__ == "__main__":
     test.runWeek1()
     test.testFindSentiment()
     test.testAddSentimentColumn()'''
-    test.testFindHashtags()
     
     
     
