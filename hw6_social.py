@@ -73,7 +73,14 @@ Parameters: str
 Returns: str
 '''
 def parseState(fromString):
-    return
+    str=""
+    for i in fromString.split("\n"):
+        fromto=i.find("from")
+        str=fromString[fromto:]
+        str=str.replace(")","")
+        str=str.replace("from ","")
+    return str
+    
 
 
 '''
