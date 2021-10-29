@@ -4,6 +4,7 @@ Name:
 Roll Number:
 """
 
+from typing import Dict
 from pandas.core.frame import DataFrame
 import hw6_social_tests as test
 
@@ -186,7 +187,19 @@ Parameters: dataframe ; str ; str
 Returns: dict mapping strs to ints
 '''
 def getDataCountByState(data, colName, dataToCount):
-    return
+    Dict={}
+    if colName!="" and dataToCount!="":
+        for index, row in data.iterrows():
+            if row[colName]==dataToCount:
+                if row["state"] not in Dict:
+                    Dict[row["state"]]=0
+                Dict[row["state"]]+=1
+    else:
+        for index, row in data.iterrows():
+            if row['state'] not in Dict:
+                Dict[row["state"]]=0
+            Dict[row["state"]]+=1
+    return Dict
 
 
 '''
