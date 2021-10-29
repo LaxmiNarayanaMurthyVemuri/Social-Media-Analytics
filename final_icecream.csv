@@ -1,0 +1,61 @@
+Semester,#1 original,#2 original,#3 original,#1 cleaned,#2 cleaned,#3 cleaned,#1 category,#2 category,#3 category
+S21,Chocolate,Butterscotch,Chocolate,chocolate,butterscotch,chocolate,chocolate,other,chocolate
+S21,Mango,Black Currant,Vanilla,mango,black currant,vanilla,fruit,fruit,vanilla
+S21,Buttered Baguette,Chocolate Orange with White Chocolate Chunks,Coffee and Donuts Ice Cream,buttered baguette,chocolate orange with white chocolate chunks,coffee and donuts ice cream,other,other,coffee/tea
+S21,Butterscotch,Strawberry,Vanilla,butterscotch,strawberry,vanilla,other,fruit,vanilla
+S21,Belgium Chocolate,Blueberry,Mint Chocolate,belgium chocolate,blueberry,mint chocolate,chocolate,fruit,chocolate
+S21,Chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+S21,Vanilla,Chocolate,Butterscotch,vanilla,chocolate,butterscotch,vanilla,chocolate,other
+S21,Belgium Chocolate,Butterscotch,Strawberry,belgium chocolate,butterscotch,strawberry,chocolate,other,fruit
+S21,Chocolate,Vanilla,Strawberry,chocolate,vanilla,strawberry,chocolate,vanilla,fruit
+S21,Double Chocolate,Dulce de leche,Pista,double chocolate,dulce de leche,pista,chocolate,other,other
+S21,Dolce latte,Caramel Nuts,Coffee caramel,dolce latte,caramel nuts,coffee caramel,coffee/tea,other,coffee/tea
+S21,Chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+S21,Chocolate,Strawberry,Tutti Frooty,chocolate,strawberry,tutti frooty,chocolate,fruit,fruit
+S21,Chocolate,Cookies and Cream,Butterscotch,chocolate,cookies and cream,butterscotch,chocolate,cookie,other
+S21,Vanilla,Tiramisu,Pista,vanilla,tiramisu,pista,vanilla,coffee/tea,other
+,Chocolate Cake,Nuts,Custard Apple,chocolate cake,nuts,custard apple,chocolate,other,fruit
+,Butterscotch,Chocolate,Vanilla,butterscotch,chocolate,vanilla,other,chocolate,vanilla
+,Chocolate,Vanilla,Mango,chocolate,vanilla,mango,chocolate,vanilla,fruit
+,Chocolate,Cookies and Cream,Butterscotch,chocolate,cookies and cream,butterscotch,chocolate,cookie,other
+,Chocolate,Custard Apple,Butterscotch,chocolate,custard apple,butterscotch,chocolate,fruit,other
+,Chocolate,Black Forest,Raspberry,chocolate,black forest,raspberry,chocolate,chocolate,fruit
+,Chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+,Arabian Nights,Willy wonka,Choco Hazel,arabian nights,willy wonka,choco hazel,other,chocolate,chocolate
+,Ferroro Roacher,Custard Apple,Death by Chocolate,ferroro roacher,custard apple,death by chocolate,chocolate,fruit,chocolate
+,Vanilla,Paan,Strawberry,vanilla,paan,strawberry,vanilla,other,fruit
+,Dark Chocolate,Chocolate,Pista,dark chocolate,chocolate,pista,chocolate,chocolate,other
+,Strawberry,Butterscotch,Vanilla,strawberry,butterscotch,vanilla,fruit,other,vanilla
+,Chocolate Brownie,Chocolate,Butterscotch,chocolate brownie,chocolate,butterscotch,chocolate,chocolate,other
+,Chocolate Brownie,Vanilla,Butterscotch,chocolate brownie,vanilla,butterscotch,chocolate,vanilla,other
+,Chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+,Chocolate,Oreo,Vanilla,chocolate,oreo,vanilla,chocolate,cookie,vanilla
+,Butterscotch,Black Currant,Oreo,butterscotch,black currant,oreo,other,fruit,cookie
+,Chocolate,Butterscotch,Black Currant,chocolate,butterscotch,black currant,chocolate,other,fruit
+,Chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+,Butterscotch,Vanilla,Chocolate,butterscotch,vanilla,chocolate,other,vanilla,chocolate
+,Chocolate,Pista,Butterscotch,chocolate,pista,butterscotch,chocolate,other,other
+,Chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+,Red Velvet,Belgium Chocolate,Black Currant,red velvet,belgium chocolate,black currant,other,chocolate,fruit
+,Butterscotch,Chocolate,Custard Apple,butterscotch,chocolate,custard apple,other,chocolate,fruit
+,Chocolate,Strawberry,Mint Chocolate Chip,chocolate,strawberry,mint chocolate chip,chocolate,fruit,chocolate
+,Chocolate,Blueberry,Cookies and Cream,chocolate,blueberry,cookies and cream,chocolate,fruit,cookie
+,Chocolate,Black Currant,Custard Apple,chocolate,black currant,custard apple,chocolate,fruit,fruit
+,Chocolate,Strawberry,Butterscotch,chocolate,strawberry,butterscotch,chocolate,fruit,other
+,Chocolate Brownie,Chocolate,Vanilla,chocolate brownie,chocolate,vanilla,chocolate,chocolate,vanilla
+,Black Currant,Strawberry,Butterscotch,black currant,strawberry,butterscotch,fruit,fruit,other
+,Chocolate,Strawberry,Blueberry,chocolate,strawberry,blueberry,chocolate,fruit,fruit
+,Blueberry,Tooti frooti,Butterscotch,blueberry,tooti frooti,butterscotch,fruit,fruit,other
+,Vanilla,Chocolate,Cookies and Cream,vanilla,chocolate,cookies and cream,vanilla,chocolate,cookie
+,Chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+,Butterscotch,Black Forest,Vanilla,butterscotch,black forest,vanilla,other,chocolate,vanilla
+,Chocolate,Vanilla,Butter milk,chocolate,vanilla,butter milk,chocolate,vanilla,other
+,Butterscotch,Chocolate,Mango,butterscotch,chocolate,mango,other,chocolate,fruit
+,Blueberry,Tutti frooti,Chocolate,blueberry,tutti frooti,chocolate,fruit,fruit,chocolate
+,Nutella Chocolate,Tender Coconut,Mango,nutella chocolate,tender coconut,mango,chocolate,other,fruit
+,Chocolate,Caramel,Butterscotch,chocolate,caramel,butterscotch,chocolate,other,other
+,Chocolate,Butterscotch,Belgian Chocolate,chocolate,butterscotch,belgian chocolate,chocolate,other,chocolate
+,Double Chocolate,Tender Coconut,Litchi,double chocolate,tender coconut,litchi,chocolate,other,fruit
+,Strawberry,Butterd pecan,Cookies and Cream,strawberry,butterd pecan,cookies and cream,fruit,other,cookie
+,Chocolate,Vanilla,Black Forest,chocolate,vanilla,black forest,chocolate,vanilla,chocolate
+,Butterscotch,Vanilla,Chocolate,butterscotch,vanilla,chocolate,other,vanilla,chocolate
