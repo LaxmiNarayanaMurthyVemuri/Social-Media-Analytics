@@ -283,9 +283,12 @@ def graphStateCounts(stateCounts, title):
     import matplotlib.pyplot as plt
     states = list(stateCounts.keys())
     value= list(stateCounts.values())
-    sideBySideBarPlots(states,states,value,title)
-
-
+    plt.bar(states,value,width=0.8)
+    plt.xticks(ticks=list(range(len(states))), labels=states, rotation="vertical")
+    plt.title(title)
+    plt.xlabel("States")
+    plt.ylabel("Messages")
+    plt.show()
     return
 
 
@@ -387,10 +390,10 @@ if __name__ == "__main__":
     
 
     ## Uncomment these for Week 2 ##
-    print("\n" + "#"*15 + " WEEK 2 TESTS " +  "#" * 16 + "\n")
+    '''print("\n" + "#"*15 + " WEEK 2 TESTS " +  "#" * 16 + "\n")
     test.week2Tests()
     print("\n" + "#"*15 + " WEEK 2 OUTPUT " + "#" * 15 + "\n")
-    test.runWeek2()
+    test.runWeek2()'''
 
 
     ## Uncomment these for Week 3 ##
