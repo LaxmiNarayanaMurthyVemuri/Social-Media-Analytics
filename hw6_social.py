@@ -299,7 +299,22 @@ Parameters: dict mapping strs to ints ; dict mapping strs to ints ; int ; str
 Returns: None
 '''
 def graphTopNStates(stateCounts, stateFeatureCounts, n, title):
+    d={}
+    d1={}
+    for each in stateFeatureCounts:
+        value=stateFeatureCounts[each]/stateCounts[each]
+        d[each]=value
+    while(len(d1)!=n):
+        large=0
+        for each in d:
+            if each not in d1 and d[each]>large:
+                large=d[each]
+                key=each
+        d1[key]=large
+    graphStateCounts(d1,title)
     return
+
+
 
 
 '''
