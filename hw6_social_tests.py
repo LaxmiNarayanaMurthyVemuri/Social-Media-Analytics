@@ -158,7 +158,6 @@ def testGetDataForRegion(df):
     assert(d2["South"]["national"] == 1561)
     assert(d2["Midwest"]["constituency"] == 265)
     assert(d2["Northeast"]["national"] == 682)
-
     print(".. done!")
 
 def testGetHashtagRates(df):
@@ -193,7 +192,6 @@ def testGetHashtagSentiment(df):
     assert(math.isclose(getHashtagSentiment(df, "#STEM"), 0.6))
     assert(math.isclose(getHashtagSentiment(df, "#ObamaCare"), 0))
     print("... done!")
-
 
 def week2Tests():
     testFindSentiment()
@@ -278,3 +276,5 @@ def runWeek3():
 
     print("Scatterplot:")
     graphHashtagSentimentByFrequency(df)
+
+    
