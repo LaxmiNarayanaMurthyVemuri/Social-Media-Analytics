@@ -251,8 +251,15 @@ mostCommonHashtags(hashtags, count)
 Parameters: dict mapping strs to ints ; int
 Returns: dict mapping strs to ints
 '''
+import operator
 def mostCommonHashtags(hashtags, count):
-    return
+    result={}
+    sorted_hastags = dict( sorted(hashtags.items(), key=operator.itemgetter(1),reverse=True))
+    for i in range(count):
+        for x,y in sorted_hastags.items():
+            if len(result)!=count:
+                result[x]=y
+    return result
 
 
 '''
