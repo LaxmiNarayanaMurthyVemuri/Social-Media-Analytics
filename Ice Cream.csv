@@ -1,0 +1,60 @@
+Semester,#1 original,#2 original,#3 original,#1 cleaned,#2 cleaned,#3 cleaned,#1 category,#2 category,#3 category
+S21,chocolate ,watermelon ,mango,chocolate ,watermelon ,mango,chocolate,fruit,fruit
+S21,chocolate ,vanilla,oreo ,chocolate ,vanilla,oreo ,chocolate,vanilla,cookies
+S21,vanilla,apple,hazelnut,vanilla,apple,hazelnut,vanilla,fruit,others
+S21,vanilla,rajwada,chocolate brownie,vanilla,rajwada,chocolate brownie,vanilla,others,chocolate
+S21,belgium choclate,alphanso mango(fresh fruit),vanilla,belgium choclate,alphanso mango(fresh fruit),vanilla,chocolate,fruit,vanilla
+S21,rajbhog,american nuts,pista,rajbhog,american nuts,pista,others,others,others
+S21,stawberry,butter scotch,grape,stawberry,butterscotch,grape,fruit,others,fruit
+S21,dark chocolate,chocolate,hazelnut,dark chocolate,chocolate,hazelnut,chocolate,vanilla,others
+S21,chocolate,passion fruit,butterscotch,chocolate,passion fruit,butterscotch,chocolate,fruit,others
+S21,chocolate,strawberry,butterscotch,chocolate,strawberry,butterscotch,chocolate,fruit,others
+S21,choclate,brownie,nutty crunch,choclate,brownie,nutty crunch,chocolate,cookies,others
+S21,vanilla,strawberry,coffee,vanilla,strawberry,coffee,vanilla,fruit,coffee
+S21,butterscotch,chocolate,kesarpista,butterscotch,chocolate,kesarpista,others,chocolate,others
+S21,dark chocolate,black current,pista,dark chocolate,black current,pista,chocolate,others,others
+S21,belgium chocolate,coffee,strawberry,belgium chocolate,coffee,strawberry,chocolate,coffee,fruit
+,vanilla,strawberry,mint chocolate chip,vanilla,strawberry,mint chocolate chip,vanilla,fruit,cookies
+,belgium chocolate,mango ,pista,belgium chocolate,mango ,pista,chocolate,fruit,others
+,butterscotch,chocolate,vanilla,butterscotch,chocolate,vanilla,others,chocolate,vanilla
+,butterscotch,chocolate,vanilla,butterscotch,chocolate,vanilla,others,chocolate,vanilla
+,butterscotch,mango,custard apple,butterscotch,mango,custard apple,others,fruit,fruit
+,butterscotch ,black current,strawberry,butterscotch ,black current,strawberry,others,others,fruit
+,butterscoth,vanilla,chocolate,butterscotch,vanilla,chocolate,others,vanilla,chocolate
+,chocolate,pista,vanilla,chocolate,pista,vanilla,chocolate,others,vanilla
+,chocolate,mango,vanilla,chocolate,mango,vanilla,chocolate,fruit,vanilla
+,chocolate chip,oreo,mango,chocolate chip,oreo,mango,chocolate,cookies,fruit
+,choco brownie,roasted almond,butter scotch,choco brownie,roasted almond,butterscotch,chocolate,cookies,others
+,chocolate,fruit and nut,black current,chocolate,fruit and nut,black current,chocolate,cookies,others
+,chocolate,butterscotch,vanilla,chocolate,butterscotch,vanilla,chocolate,others,vanilla
+,butterscotch ,vanilla,chocolate,butterscotch,vanilla,chocolate,others,vanilla,chocolate
+,strawberry,chocolate,pinnacle,strawberry,chocolate,pinnacle,fruit,chocolate,others
+,vanilla,strawberry,butterscotch,vanilla,strawberry,butterscotch,vanilla,fruit,others
+,sitafal,tender coconut ,butterscotch,sitafal,tender coconut ,butterscotch,fruit,fruit,others
+,american nuts,vanila,vanella,american nuts,vanilla,vanilla,others,vanilla,vanilla
+,chocolate,kesar,pista,chocolate,kesar,pista,chocolate,others,others
+,vanilla,mango,butterscotch,vanilla,mango,butterscotch,vanilla,fruit,others
+,butterscotch ,vanilla,strawberry,butterscotch ,vanilla,strawberry,others,vanilla,fruit
+,vanilla,chocolate ,butter scotch ,vanilla,chocolate ,butterscotch ,vanilla,chocolate,others
+,black current,vanilla,butterscotch,black current,vanilla,butterscotch,others,vanilla,others
+,vanilla,mango,choco,vanilla,mango,chocolate,vanilla,fruit,chocolate
+,mango,black current,strawberry,mango,black current,strawberry,fruit,others,fruit
+,chocolate,mango,butterscotch,chocolate,mango,butterscotch,chocolate,fruit,others
+,vanilla,butterscotch,mango,vanilla,butterscotch,mango,vanilla,others,fruit
+,chocolate,mango,kesar,chocolate,mango,kesar,chocolate,fruit,others
+,mango,kesar,kesar,mango,kesar,kesar,fruit,others,others
+,chocolate,mango,kesar,chocolate,mango,kesar,chocolate,fruit,others
+,chocolate,kesar,mango,chocolate,kesar,mango,chocolate,others,fruit
+,chocolate,mango,vanilla,chocolate,mango,vanilla,chocolate,fruit,vanilla
+,mango,butterscotch,vanilla,mango,butterscotch,vanilla,fruit,others,vanilla
+,vanilla,mango,black current,vanilla,mango,black current,vanilla,fruit,others
+,vanilla,butterscotch,strawberry,vanilla,butterscotch,strawberry,vanilla,others,fruit
+,black current,butterscotch,strawberry,black current,butterscotch,strawberry,others,others,fruit
+,mango,strawberry,vanilla,mango,strawberry,vanilla,fruit,fruit,vanilla
+,butterscotch,american nuts,strawberry,butterscotch,american nuts,strawberry,others,others,fruit
+,american nuts,mango,vanilla,american nuts,mango,vanilla,others,fruit,vanilla
+,butterscotch,vanilla,american nuts,butterscotch,vanilla,american nuts,others,vanilla,others
+,vanilla,mango,strawberry,vanilla,mango,strawberry,vanilla,fruit,fruit
+,mango,vanilla,strawberry,mango,vanilla,strawberry,fruit,vanilla,fruit
+,strawberry,mango,custard apple,strawberry,mango,custard apple,fruit,fruit,fruit
+,tender coconut ,butterscotch,black current,tender coconut ,butterscotch,black current,fruit,others,others
