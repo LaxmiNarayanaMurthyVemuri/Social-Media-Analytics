@@ -316,7 +316,17 @@ graphTopNStates(stateCounts, stateFeatureCounts, n, title)
 Parameters: dict mapping strs to ints ; dict mapping strs to ints ; int ; str
 Returns: None
 '''
+from collections import Counter
 def graphTopNStates(stateCounts, stateFeatureCounts, n, title):
+    featurerate = {} 
+    topstates = {} 
+    for i in stateFeatureCounts: 
+    #    print(i)
+    #    print("avg",stateFeatureCounts[i] / stateCounts[i]) 
+       featurerate[i] = (stateFeatureCounts[i] / stateCounts[i]) 
+    #    print(featurerate)
+       topstates = dict(Counter(featurerate).most_common(n)) 
+    graphStateCounts(topstates, title)
     return
 
 
