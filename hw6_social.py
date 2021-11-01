@@ -193,7 +193,21 @@ Parameters: dataframe ; str ; str
 Returns: dict mapping strs to ints
 '''
 def getDataCountByState(data, colName, dataToCount):
-    return
+    newd={}
+    # print("datacolname:",data[colName])
+    if len(colName) !=0 and  len(dataToCount) !=0:
+        for index,row in data.iterrows():
+            if row[colName] == dataToCount:
+                if row['state'] not in newd:
+                    print("state:", row['state'])
+                    newd[row['state']]=0
+                newd[row['state']]+=1
+    elif colName=="" and dataToCount=="":
+        for index,row in data.iterrows():
+            if row['state'] not in newd:
+                newd[row['state']]=0
+            newd[row['state']]+=1
+    return newd
 
 
 '''
