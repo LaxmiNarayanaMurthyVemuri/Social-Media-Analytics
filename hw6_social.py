@@ -217,7 +217,14 @@ Parameters: dataframe ; str
 Returns: dict mapping strs to (dicts mapping strs to ints)
 '''
 def getDataForRegion(data, colName):
-    return
+    dict_1={}
+    for index,row in data.iterrows():
+        if row['region'] not in dict_1:
+            dict_1[row['region']]={}
+        if row[colName] not in dict_1[row['region']]:
+            dict_1[row['region']][row[colName]]=0
+        dict_1[row['region']][row[colName]]+=1
+    return dict_1
 
 
 '''
