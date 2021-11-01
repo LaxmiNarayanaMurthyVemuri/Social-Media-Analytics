@@ -1,0 +1,58 @@
+Semester,#1original,#2original,#3original,#1 cleaned,#2 cleaned,# 3 cleaned,#1 category,#2 category,#3 category 
+S21,chocolate,Mango,Vanilla,chocolate,mango,vanilla,,fruit,vanilla,chocolate
+S21,Dark chocolate,chocolate,Hazelnut,dark chocolate,chocolate,hazelnut,chocolate,chocolate,fruit
+S21,chocolate,strawberry,vanilla,chocolate,strawberry,vanilla,chocolate,fruit,vanilla
+S21,Nuts overloaded,American delight,Butterscotch,nuts overloaded,american delight,butterscotch,Mixed,other,butterscotch
+S21,vanilla,mint chocolate chip,strawberry,vanilla,mint chocolate chip,strawberry,vanilla,cookie,fruit
+S21,chocolate ,Strawberry,Vanilla,chocolate,strawberry,vanilla,chocolate,fruit,vanilla
+S21,ButterScotch,Strawberry,chocolate,butterscotch,strawberry,chocolate,butterscotch,fruit,chocolate
+S21,chocolate,Red velvet,Butterscotch,chocolate,red velvet,butterscotch,chocolate,other,butterscotch
+S21,Butterscotch,chocolate,Vanilla,butterscotch,chocolate,vanilla,butterscotch,chocolate,vanilla
+S21,chocolate,chocolate,chocolate,chocolate,chocolate,chocolate,chocolate,chocolate,chocolate
+S21,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,butterscotch,vanilla,chocolate
+S21,Orange ,Vanilla,Butterscotch,orange ,vanilla,butterscotch,fruit,vanilla,butterscotch
+S21,chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,butterscotch,vanilla
+S21,Belgium chocolate,Coffee brownie,Strawberry,belgium chocolate,coffeebrownie,strawberry,chocolate,cookie,fruit
+S21,Strawberry,Butterscotch,chocolate,strawberry,butterscotch,chocolate,fruit,butterscotch,chocolate
+F20,chocolate,Butterscotch ,Vanilla ,chocolate,butterscotch,vanilla,chocolate,butterscotch,vanilla
+F20,Very berry icecream and chikoo,Golden medal ribbon,Caramel,chikoo,golden medal ribbon,caramel,other,Mixed,other
+F20,Belgiun chocolate,American nut,Hazelnut,belgium chocolate,american nut,hazelnut,chocolate,Mixed,fruit
+F20,Strawberry ,chocolate ,Vanilla ,strawberry,chocolate,vanilla,fruit,chocolate,vanilla
+F20,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,butterscotch,vanilla,chocolate
+F20,chocolate,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,butterscotch,vanilla
+F20,Butterscotch,Blackcurrent,American nuts,butterscotch,blackcurrent,american nut,butterscotch,other,Mixed
+F20,Strawberry,Vanilla,chocolate ,strawberry,vanilla,chocolate,fruit,vanilla,chocolate
+F20,chocolate,Strawberry,Vanilla,chocolate,strawberry,vanilla,chocolate,fruit,vanilla
+F20,chocolate ,Pistachio ,Butterscotch ,chocolate,pistachio,butterscotch,chocolate,other,butterscotch
+F20,Black forest,chocolate,Butterscotch,black forest,chocolate,butterscotch,Mixed,chocolate,butterscotch
+F20,Mango ,Milk ,Cone,mango,milk ,pistachio,fruit,other,other
+F20,Strawberry ,Butterscotch,Vanilla,strawberry,butterscotch,vanilla,fruit,butterscotch,vanilla
+F20,chocolate ice cream,Vanilla,Strawberry,chocolate,vanilla,strawberry,chocolate,vanilla,fruit
+F20,chocolate ice cream,Vanila ,Mango,chocolate,vanilla,mango,chocolate,vanilla,fruit
+F20,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,butterscotch,vanilla,chocolate
+F20,vanila,butterskotch,strawberry,vanilla,butterscotch,strawberry,vanilla,butterscotch,fruit
+F20,chocolate,Vanilla,Butterscotch,chocolate,vanilla,butterscotch,chocolate,vanilla,butterscotch
+F20,Butterscotch,Vanilla,chocolate,butterscotch,vanilla,chocolate,butterscotch,vanilla,chocolate
+F20,Butterscotch,Tender coconut,Vanilla ,butterscotch,tender coconut,vanilla,butterscotch,other,vanilla
+F20,Butterscotch,chocolate,Butterscotch,butterscotch,chocolate,butterscotch,butterscotch,chocolate,butterscotch
+F20,Chocobar ,Cone icecream chocolate flavor,vanilla,chocolate,chocolate,vanilla,chocolate,chocolate,vanilla
+F20,Fruit and nut ,Vanilla raspberry chocolate icecream ,Strawberry choco chip ,fruit and nut ,vanilla,strawberry choco chip ,other,vanilla,cookie
+F20,Vanilla,Scotchbar,Pineapple,vanilla,scotchbar,pineapple,vanilla,other,fruit
+F20,chocolate,Butterscotch,Red velvet,chocolate,butterscotch,red velvet,chocolate,butterscotch,other
+F20,Choco bar  ,Vanilla,Straw berry icecream ,choco bar  ,vanilla,strawberry,chocolate,vanilla,fruit
+F20,Choco-Chips,Sithaphal,chocolate,choco-chips,pineapple,chocolate,cookie,fruit,chocolate
+F20,Butterscotch ,Black current ,Mango ,butterscotch,blackcurrent,mango,butterscotch,Mixed,fruit
+F20,sizzling brownie,raspberry,butterscotch,sizzling brownie,raspberry,butterscotch,cookie,other,butterscotch
+F20,Vanilla ,chocolate ,Choco-Chips,vanilla,chocolate,choco-chips,vanilla,chocolate,cookie
+F20,Vanilla ,Dry fruit ,Strawberry  ,vanilla,dry fruit ,strawberry,vanilla,fruit,fruit
+F20,vanilla,mango,choco,vanilla,mango,chocolate,vanilla,fruit,chocolate
+F20,Mint chocolate chip,Vanilla,Mango,mint chocolate chip,vanilla,mango,cookie,vanilla,fruit
+F20,Strawberry,chocolate chip,Pistachio,strawberry,chocolate chip,pistachio,fruit,cookie,other
+F20,Vanilla,Coffee,Mint,vanilla,coffee,mint,vanilla,other,other
+F20,Hazelnut,Mango,Vanilla,hazelnut,mango,vanilla,fruit,fruit,vanilla
+F20,Mint,Hazelnut,chocolateBrownie,mint,hazelnut,chocolatebrownie,other,fruit,cookie
+F20,chocolate,Sitaphal,Butterscotch,chocolate,pineapple,butterscotch,chocolate,fruit,butterscotch
+F20,Hazelnut,Mango,Butterscoth,hazelnut,mango,butterscotch,fruit,fruit,butterscotch
+F20,HazelNut,Pineapple,Coconut,hazelnut,pineapple,tender coconut,fruit,fruit,other
+F20,Hazelnut,Pineapple,Pistacho,hazelnut,pineapple,pistacho,fruit,fruit,other
+F20,Butterscoth,ButterPecan,Pineapple,butterscotch,butterpecan,pineapple,butterscotch,other,fruit
