@@ -87,7 +87,29 @@ Parameters: str
 Returns: list of strs
 '''
 def findHashtags(message):
-    return
+    hashtags=[]
+    words=[]
+    new=[]
+    chars =  "[@_!$%^&*`;+=(.,)<->?/\|}'{~:]"
+
+    for i in chars:
+        if i in message:
+           message=  message.replace(i," ")
+    words= message.split()
+    # print(message)
+
+    for i in range(len(words)):
+        if words[i][0]=="#":
+     #main code ends here
+            if words[i].count("#")>1:
+               new=words[i].split("#",2)
+               #print(new)
+               for j in range(1,len(new)):
+                  new[j]="#"+new[j]
+                  hashtags.append(new[j])
+            else: hashtags.append(words[i])
+    # print(hashtags)
+    return hashtags
 
 
 '''
@@ -298,7 +320,8 @@ if __name__ == "__main__":
     # ## Uncomment these for Week 3 ##
     # """print("\n" + "#"*15 + " WEEK 3 OUTPUT " + "#" * 15 + "\n")
     # test.runWeek3()"""
-    test.testMakeDataFrame()
-    test.testParseName()
-    test.testParsePosition()
-    test.testParseState()
+    # test.testMakeDataFrame()
+    # test.testParseName()
+    # test.testParsePosition()
+    # test.testParseState()
+    test.testFindHashtags()
