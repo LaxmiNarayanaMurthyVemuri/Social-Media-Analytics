@@ -198,7 +198,25 @@ Parameters: dataframe ; str ; str
 Returns: dict mapping strs to ints
 '''
 def getDataCountByState(data, colName, dataToCount):
-    return
+    stateDict={}
+    if(colName=="" and dataToCount==""):
+         for  index, row in data.iterrows():
+            if row['state'] in stateDict:
+                    stateDict[row['state']]=stateDict[row['state']]+1
+            else:
+                    stateDict[row['state']]=1
+    else:
+        for  index, row in data.iterrows():
+            if row[colName]==dataToCount:
+                if row['state'] in stateDict:
+                    stateDict[row['state']]=stateDict[row['state']]+1
+                else:
+                    stateDict[row['state']]=1
+
+   # print(stateDict)  
+
+    return stateDict
+         
 
 
 '''
@@ -355,12 +373,21 @@ if __name__ == "__main__":
     # ## Uncomment these for Week 3 ##
     # """print("\n" + "#"*15 + " WEEK 3 OUTPUT " + "#" * 15 + "\n")
     # test.runWeek3()"""
+
+
     # test.testMakeDataFrame()
     # test.testParseName()
     # test.testParsePosition()
     # test.testParseState()
-    #test.testFindHashtags()
-    #test.testGetRegionFromState()
-    #test.testAddColumns()
-   # test.testFindSentiment()
-   test.testAddSentimentColumn()
+    # test.testFindHashtags()
+    # test.testGetRegionFromState()
+    # test.testAddColumns()
+    # test.testFindSentiment()
+    # test.testAddSentimentColumn()
+  
+    df = makeDataFrame("data/politicaldata.csv")
+    stateDf = makeDataFrame("data/statemappings.csv")
+    addColumns(df, stateDf)
+    addSentimentColumn(df)
+
+    test.testGetDataCountByState(df)
