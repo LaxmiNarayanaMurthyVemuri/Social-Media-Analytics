@@ -226,8 +226,14 @@ Parameters: dataframe ; str
 Returns: dict mapping strs to (dicts mapping strs to ints)
 '''
 def getDataForRegion(data, colName):
-    return
-
+    outerDict={}
+    for  index, row in data.iterrows():
+        if row['region'] not in outerDict:
+           outerDict[row['region']]={}
+        if row[colName] not in  outerDict[row['region']]:
+            outerDict[row['region']][row[colName]]=0
+        outerDict[row['region']][row[colName]]+=1
+    return outerDict
 
 '''
 getHashtagRates(data)
@@ -390,4 +396,5 @@ if __name__ == "__main__":
     addColumns(df, stateDf)
     addSentimentColumn(df)
 
-    test.testGetDataCountByState(df)
+    #test.testGetDataCountByState(df)
+    test.testGetDataForRegion(df)
