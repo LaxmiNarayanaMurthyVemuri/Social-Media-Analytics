@@ -163,6 +163,8 @@ Returns: None
 '''
 def addSentimentColumn(data):
     classifier = SentimentIntensityAnalyzer()
+    sen=[findSentiment(classifier, r["text"]) for i,r in data.iterrows()]
+    data['sentiment']=sen
     return
 
 
@@ -326,7 +328,8 @@ if __name__ == "__main__":
     # test.testFindHashtags()
     # test.testGetRegionFromState()
     # test.testAddColumns()
-    test.testFindSentiment()
+    # test.testFindSentiment()
+    test.testAddSentimentColumn()
     ## Uncomment these for Week 2 ##
     """print("\n" + "#"*15 + " WEEK 2 TESTS " +  "#" * 16 + "\n")
     test.week2Tests()
