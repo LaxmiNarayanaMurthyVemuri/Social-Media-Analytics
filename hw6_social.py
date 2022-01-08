@@ -87,7 +87,6 @@ def findHashtags(message):
     new = message.split("#") #[]
     s=""
     list=[]
-    print(new)
     for i in new[1:]:
         for j in i:
             if j not in endChars:
@@ -197,7 +196,16 @@ Parameters: dataframe ; str
 Returns: dict mapping strs to (dicts mapping strs to ints)
 '''
 def getDataForRegion(data, colName):
-    return
+    dicts={}
+    for i,row in data.iterrows():
+        key=row["region"]
+        if key not in dicts:
+            dicts[key]={}
+        if row[colName] not in dicts[key]:
+            dicts[key][row[colName]]=1
+        else:
+            dicts[key][row[colName]]+=1
+    return dicts
 
 
 '''
@@ -352,7 +360,8 @@ if __name__ == "__main__":
     stateDf = makeDataFrame("data/statemappings.csv")
     addColumns(df, stateDf)
     addSentimentColumn(df)
-    test.testGetDataCountByState(df)
+    # test.testGetDataCountByState(df)
+    test.testGetDataForRegion(df)
 
     ## Uncomment these for Week 3 ##
     """print("\n" + "#"*15 + " WEEK 3 OUTPUT " + "#" * 15 + "\n")
