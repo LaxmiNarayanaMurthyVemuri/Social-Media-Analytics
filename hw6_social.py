@@ -241,19 +241,16 @@ Parameters: dataframe
 Returns: dict mapping strs to ints
 '''
 def getHashtagRates(data):
-    hashDict = {}
+    hashtagDict = {}
     for index,row in data.iterrows():
         if(row['hashtags']!=[]):
-            print(row['hashtags'])
+           # print(row['hashtags'])
             for i in row['hashtags']:
-                if i not in hashDict:
-                    hashDict[i]=1
+                if i not in hashtagDict:
+                    hashtagDict[i]=1
                 else:
-                    hashDict[i]=hashDict[i]+1
-    # print(len(hashDict))  
-    # #print(index)  
-    # print(len(data.hashtags))          
-    return hashDict
+                    hashtagDict[i]=hashtagDict[i]+1     
+    return hashtagDict
 
 
 
