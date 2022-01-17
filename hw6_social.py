@@ -261,7 +261,9 @@ Parameters: dict mapping strs to ints ; int
 Returns: dict mapping strs to ints
 '''
 def mostCommonHashtags(hashtags, count):
-    return
+    import operator
+    commonHashtags = dict(sorted(hashtags.items(), key=operator.itemgetter(1), reverse=True)[:count])  
+    return commonHashtags
 
 
 '''
