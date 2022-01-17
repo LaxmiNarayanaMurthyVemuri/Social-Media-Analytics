@@ -4,6 +4,7 @@ Name:
 Roll Number:
 """
 
+from ast import parse
 import hw6_social_tests as test
 
 project = "Social" # don't edit this
@@ -87,29 +88,26 @@ Parameters: str
 Returns: list of strs
 '''
 def findHashtags(message):
-    hashtags=[]
-    words=[]
-    new=[]
-    chars =  "[@_!$%^&*`;+=(.,)<->?/\|}'{~:]"
-
-    for i in chars:
-        if i in message:
-           message=  message.replace(i," ")
-    words= message.split()
-    # print(message)
-
-    for i in range(len(words)):
-        if words[i][0]=="#":
-     #main code ends here
-            if words[i].count("#")>1:
-               new=words[i].split("#",2)
-               #print(new)
-               for j in range(1,len(new)):
-                  new[j]="#"+new[j]
-                  hashtags.append(new[j])
-            else: hashtags.append(words[i])
-    # print(hashtags)
+    hashtags=[]  
+    hashtag="#"
+    list2=[]
+    list=message.split("#")
+    for i in range(1,len(list)):
+        list2.append(list[i])
+    #print(list2)
+    for word in list2:
+       # print(word)
+        for char in word:
+            if char in endChars:
+                #hello=i.split(k)  
+                break
+            else: 
+                hashtag+=char      
+       # print(hello)
+        hashtags.append(hashtag)
+        hashtag="#"
     return hashtags
+#findHashtags("the #Shell is here#S@123#pavan@hi,howareyou")
 
 
 '''
@@ -141,8 +139,8 @@ def addColumns(data, stateDf):
         position=parsePosition(value)
         state=parseState(value)
         region=getRegionFromState(stateDf,state)
-        text=row['text']
-        hashtag=findHashtags(text)
+       # text=row['text']
+        hashtag=findHashtags(row['text'])
 
         names.append(name)
         positions.append(position)
@@ -154,6 +152,7 @@ def addColumns(data, stateDf):
     data['state']=states
     data['region']=regions
     data['hashtags']=hashtags
+    #print (data['hashtags'])
     return
 
 
@@ -242,7 +241,20 @@ Parameters: dataframe
 Returns: dict mapping strs to ints
 '''
 def getHashtagRates(data):
-    return
+    hashDict = {}
+    for index,row in data.iterrows():
+        if(row['hashtags']!=[]):
+            print(row['hashtags'])
+            for i in row['hashtags']:
+                if i not in hashDict:
+                    hashDict[i]=1
+                else:
+                    hashDict[i]=hashDict[i]+1
+    # print(len(hashDict))  
+    # #print(index)  
+    # print(len(data.hashtags))          
+    return hashDict
+
 
 
 '''
@@ -387,7 +399,7 @@ if __name__ == "__main__":
     # test.testParseState()
     # test.testFindHashtags()
     # test.testGetRegionFromState()
-    # test.testAddColumns()
+   # test.testAddColumns()
     # test.testFindSentiment()
     # test.testAddSentimentColumn()
   
@@ -395,6 +407,8 @@ if __name__ == "__main__":
     stateDf = makeDataFrame("data/statemappings.csv")
     addColumns(df, stateDf)
     addSentimentColumn(df)
+   
 
-    #test.testGetDataCountByState(df)
+    test.testGetDataCountByState(df)
     test.testGetDataForRegion(df)
+    test.testGetHashtagRates(df)
