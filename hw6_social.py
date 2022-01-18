@@ -323,7 +323,7 @@ def graphTopNStates(stateCounts, stateFeatureCounts, n, title):
     topStates=topNStates.keys()
     rate=topNStates.values()
     plt.bar(topStates,rate)
-    plt.xticks(rotation ='vertical')
+    #plt.xticks(rotation ='vertical')
     plt.title(title)
     plt.show()
     return
@@ -336,6 +336,28 @@ Parameters: dict mapping strs to (dicts mapping strs to ints) ; str
 Returns: None
 '''
 def graphRegionComparison(regionDicts, title):
+    region=list(regionDicts.keys())
+    features=[]
+    for key, value in regionDicts.items():
+        if isinstance(value, dict):
+            temp=value.keys()
+        for feature in temp:
+            if feature in features:
+                continue
+            else: features.append(feature)
+    regionFeature=[]
+    for key, value in regionDicts.items():
+        temp=[]
+        for feature in features:
+            if feature in value.keys():
+                temp.append(value[feature])
+            else:
+                temp.append(0)
+        regionFeature.append(temp)
+    # print(regionFeature)
+    # print(region)
+    # print(features)
+    sideBySideBarPlots(features, region, regionFeature, title)          
     return
 
 
@@ -418,8 +440,8 @@ if __name__ == "__main__":
     # test.runWeek2()"""
 
     # ## Uncomment these for Week 3 ##
-    # """print("\n" + "#"*15 + " WEEK 3 OUTPUT " + "#" * 15 + "\n")
-    # test.runWeek3()"""
+    print("\n" + "#"*15 + " WEEK 3 OUTPUT " + "#" * 15 + "\n")
+    test.runWeek3()
 
 
     # test.testMakeDataFrame()
@@ -432,12 +454,12 @@ if __name__ == "__main__":
     # test.testFindSentiment()
     # test.testAddSentimentColumn()
   
-    df = makeDataFrame("data/politicaldata.csv")
-    stateDf = makeDataFrame("data/statemappings.csv")
-    addColumns(df, stateDf)
-    addSentimentColumn(df)
+    # df = makeDataFrame("data/politicaldata.csv")
+    # stateDf = makeDataFrame("data/statemappings.csv")
+    # addColumns(df, stateDf)
+    # addSentimentColumn(df)
    
 
-    test.testGetDataCountByState(df)
-    test.testGetDataForRegion(df)
-    test.testGetHashtagRates(df)
+    # test.testGetDataCountByState(df)
+    # test.testGetDataForRegion(df)
+    # test.testGetHashtagRates(df)
