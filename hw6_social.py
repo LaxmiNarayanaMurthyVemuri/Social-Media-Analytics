@@ -312,6 +312,20 @@ Parameters: dict mapping strs to ints ; dict mapping strs to ints ; int ; str
 Returns: None
 '''
 def graphTopNStates(stateCounts, stateFeatureCounts, n, title):
+    import operator
+    rateDict={}
+    for state1,count1 in stateCounts.items():
+        for state2,count2 in stateFeatureCounts.items():
+            if state1==state2:
+                rateDict[state1]=count2/count1
+    
+    topNStates = dict(sorted(rateDict.items(), key=operator.itemgetter(1), reverse=True)[:n])
+    topStates=topNStates.keys()
+    rate=topNStates.values()
+    plt.bar(topStates,rate)
+    plt.xticks(rotation ='vertical')
+    plt.title(title)
+    plt.show()
     return
 
 
