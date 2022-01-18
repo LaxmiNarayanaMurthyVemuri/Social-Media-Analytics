@@ -296,6 +296,12 @@ Returns: None
 '''
 def graphStateCounts(stateCounts, title):
     import matplotlib.pyplot as plt
+    states=stateCounts.keys()
+    counts=stateCounts.values()
+    plt.bar(states,counts)
+    plt.xticks(rotation ='vertical')
+    plt.title(title)
+    plt.show()
     return
 
 
