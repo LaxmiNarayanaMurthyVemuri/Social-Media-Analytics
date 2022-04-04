@@ -1,0 +1,60 @@
+Semester,#1 original,#2 original,#3 original,#1 cleaned,#2 cleaned,#3 cleaned,#1 category,#2 category,#3 category
+S21,Butterscotch,Vanila,Straw berry,butterscotch,vanilla,strawberry,other,vanilla,fruit
+S21,Vanila,Butterscotch,Straw berry,vanilla,butterscotch,strawberry,vanilla,other,fruit
+S21,chocolate,butter pecan,butterscotch,chocolate,butter pecan,butterscotch,chocolate,other,other
+S21,cherry,raspberry,vanilla,cherry,raspberry,vanilla,fruit,fruit,vanilla
+S21,strawberry,chocolate,chocolate chip,strawberry,chocolate,chocolate chip,fruit,chocolate,chocolate
+S21,butterscotch,caramel,raspberry ripple,butterscotch,caramel,raspberry ripple,other,other,fruit
+S21,caramel,banana,vanila,caramel,banana,vanilla,other,fruit,vanilla
+S21,vanila,butterscotch,cherry,vanilla,butterscotch,cherry,vanilla,other,fruit
+S21,vanila,chocolate,raspberry,vanilla,chocolate,raspberry,vanilla,chocolate,fruit
+S21,butterscotch,butter pecan,rainbow sherbet,butterscotch,butter pecan,rainbow sherbet,other,other,other
+S21,tutti frutti,caramel,banana,tutti frutti,caramel,banana,fruit,other,fruit
+S21,strawbery,pistachio,vanilla,strawberry,pistachio,vanilla,fruit,other,vanilla
+S21,vanilla,chocolate,cherry,vanilla,chocolate,cherry,vanilla,chocolate,fruit
+S21,butterscotch,caramel,vanilla,butterscotch,caramel,vanilla,other,other,vanilla
+S21,peanut butter,raspberry,cherry,peanut butter,raspberry,cherry,other,fruit,fruit
+,butterscotch,cherry,butterscotch,butterscotch,cherry,butterscotch,other,fruit,other
+,Butterscotch,Chocolate,Vanilla,butterscotch,chocolate,vanilla,other,chocolate,vanilla
+,Chocolate,Butterscotch,Venilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+,Vanilla,Chocolate,Butterscotch,vanilla,chocolate,butterscotch,vanilla,chocolate,other
+,Venilla,Chocolate,Butterscotch,vanilla,chocolate,butterscotch,vanilla,chocolate,other
+,Strawberry,Butterscotch,Vanilla,strawberry,butterscotch,vanilla,fruit,other,vanilla
+,strawberry,vanilla,chocolate,strawberry,vanilla,chocolate,fruit,vanilla,chocolate
+,vanilla,butterscotch,caramel,vanilla,butterscotch,caramel,vanilla,other,other
+,chocolate chip,pistachio,cherry,chocolate chip,pistachio,cherry,chocolate,other,fruit
+,strawberry,raspberry,tutti frutti,strawberry,raspberry,tutti frutti,fruit,fruit,fruit
+,cherry,rocky road,cookie dough,cherry,rocky road,cookie dough,fruit,chocolate,cookie
+,caramel,vanilla,chocolate,caramel,vanilla,chocolate,other,vanilla,chocolate
+,caramel,butterscotch,vanilla,caramel,butterscotch,vanilla,other,other,vanilla
+,chocolate chip,pistachio,rockyroad,chocolate chip,pistachio,rocky road,chocolate,other,chocolate
+,Vanilla,Chocolate,Butter pecan,vanilla,chocolate,butter pecan,vanilla,chocolate,other
+,Chocolate,Butterscotch,Venilla,chocolate,butterscotch,vanilla,chocolate,other,vanilla
+,Choclate,Strawberry,Rocky road,chocolate,strawberry,rocky road,chocolate,fruit,chocolate
+,Strawberry,Vanilla,Chocolate,strawberry,vanilla,chocolate,fruit,vanilla,chocolate
+,Chocolate,Vanilla,Rocky road,chocolate,vanilla,rocky road,chocolate,vanilla,chocolate
+,Butter pecan,Vanilla,Chocolate,butter pecan,vanilla,chocolate,other,vanilla,chocolate
+,Vanilla,Strawberry,Rocky road,vanilla,strawberry,rocky road,vanilla,fruit,chocolate
+,Rocky road,Pistachio,Chocolate chip,rocky road,pistachio,chocolate chip,chocolate,other,chocolate
+,Choclate chip,Vanilla,Strawberry,chocolate chip,vanilla,strawberry,chocolate,vanilla,fruit
+,Pistachio,Chocolate,Vanilla,pistachio,chocolate,vanilla,other,chocolate,vanilla
+,Butter pecan,Pistachio,Chocolate chip,butter pecan,pistachio,chocolate chip,other,other,chocolate
+,raspberry,vanilla,butterscotch,raspberry,vanilla,butterscotch,fruit,vanilla,other
+,Choclate chip,Strawberry,Pistachio,chocolate chip,strawberry,pistachio,chocolate,fruit,other
+,Vanilla,Cookies and ice creams,Chocolate chip,vanilla,cookies and ice creams,chocolate chip,vanilla,cookie,chocolate
+,Cherry,Butter pecan,Vanilla,cherry,butter pecan,vanilla,fruit,other,vanilla
+,Strawberry,Cherry,Chocolate,strawberry,cherry,chocolate,fruit,fruit,chocolate
+,Chocolate chip,Pistachio,Cherry,chocolate chip,pistachio,cherry,chocolate,other,fruit
+,Cherry,Rocky road,Vanilla,cherry,rocky road,vanilla,fruit,chocolate,vanilla
+,Vannila,Chocolate,Strawberry,vanilla,chocolate,strawberry,vanilla,chocolate,fruit
+,Vanilla,Strawberry,Cherry,vanilla,strawberry,cherry,vanilla,fruit,fruit
+,Strawberry,Pistachio,Cherry,strawberry,pistachio,cherry,fruit,other,fruit
+,Butter pecon,Mint chocolate,Chocolate chip,butter pecon,mint chocolate,chocolate chip,other,chocolate,chocolate
+,Cookies AND ICE CREAM,Vannila,Strawberry,cookies and ice cream,vanilla,strawberry,cookie,vanilla,fruit
+,Chocolate chip,Strawberry,Butter pecon,chocolate chip,strawberry,butter pecon,chocolate,fruit,other
+,chocolate chip,cherry,banana,chocolate chip,cherry,banana,chocolate,fruit,fruit
+,STRAWBERRY,CHOCOLATE CHIP COOKIES,M&M,strawberry,chocolate chip cookies,m&m,fruit,chocolate,chocolate
+,rocky road,pistachio,raspberry,rocky road,pistachio,raspberry,chocolate,other,fruit
+,vanilla,butterscotch,rocky road,vanilla,butterscotch,rocky road,vanilla,other,chocolate
+,cherry,raspberry,vanilla,cherry,raspberry,vanilla,fruit,fruit,vanilla
+,chocolate,cherry,peanut butter,chocolate,cherry,peanut butter,chocolate,fruit,other
