@@ -25,7 +25,9 @@ Parameters: str
 Returns: dataframe
 '''
 def makeDataFrame(filename):
-    return
+    d = pd.read_csv(filename)
+    df = pd.DataFrame(d)
+    return df
 
 
 '''
@@ -276,3 +278,4 @@ if __name__ == "__main__":
     ## Uncomment these for Week 3 ##
     """print("\n" + "#"*15 + " WEEK 3 OUTPUT " + "#" * 15 + "\n")
     test.runWeek3()"""
+    test.testMakeDataFrame()
