@@ -78,7 +78,19 @@ Parameters: str
 Returns: list of strs
 '''
 def findHashtags(message):
-    return
+    line = message.split("#")
+    s = []
+    v = ""
+    for i in range(1,len(line)):
+        for j in line[i]:
+            if j in endChars:
+                break
+            else:
+                v += j
+        v = "#" + v
+        s.append(v)
+        v = ""
+    return s 
 
 
 '''
@@ -88,6 +100,7 @@ Parameters: dataframe ; str
 Returns: str
 '''
 def getRegionFromState(stateDf, state):
+
     return
 
 
@@ -293,3 +306,4 @@ if __name__ == "__main__":
     test.testParseName()
     test.testParsePosition()
     test.testParseState()
+    test.testFindHashtags()
