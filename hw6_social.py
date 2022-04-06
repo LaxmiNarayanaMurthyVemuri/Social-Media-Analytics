@@ -111,11 +111,28 @@ Parameters: dataframe ; dataframe
 Returns: None
 '''
 def addColumns(data, stateDf):
-    return
+    name = []
+    position = []
+    state = []
+    region = []
+    hashtags = []
+    for index,row in data.iterrows():
+        s = row["label"]
+        name.append(parseName(s))
+        position.append(parsePosition(s))
+        state.append(parseState(s))
+        region.append(getRegionFromState(stateDf, parseState(s)))
+        n = row["text"]
+        hashtags.append(findHashtags(n))
+    data["name"] = name
+    data["position"] = position
+    data["state"] = state
+    data["region"] = region
+    data["hashtags"] = hashtags
+    return 
 
 
 ### PART 2 ###
-
 '''
 findSentiment(classifier, message)
 #1 [Check6-2]
@@ -308,3 +325,4 @@ if __name__ == "__main__":
     test.testParseState()
     test.testFindHashtags()
     test.testGetRegionFromState()
+    test.testAddColumns()
